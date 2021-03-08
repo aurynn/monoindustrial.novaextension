@@ -7,3 +7,5 @@ Monoindustrial is a dark green-based theme, with purple, red, and orange accenti
 Should provide both an editor and a document theme.
 
 This theme is a work-in-progress.
+
+If you're the original author of Monoindustrial for TextMate, please get in touch so I can add you to the contributors :) 
