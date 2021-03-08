@@ -1,0 +1,336 @@
+/* 
+
+Window/full editor themeing
+
+*/
+
+meta {
+    -theme-interface-style: dark;
+    -theme-vibrancy: none;
+    -theme-accent-color: false;
+}
+
+/* Window-level meta */
+meta.window {
+    background-color: rgba(23,29,27,1);
+    border-color: #1a221f;
+}
+meta.titlebar {
+    /* Nice little gradient, from dark to background colour */
+    /* background: linear-gradient(rgba(23,29,27,1), rgba(34,44,40,1)); */
+    background: linear-gradient(rgba(23,29,27,1), rgba(29,37,34,1), rgba(34,44,40,1));
+    color: rgb(145,153,148);
+}
+meta.titlebar.inactive {
+    background-color: #222C28;
+}
+meta.gutter {
+    /* This doesn't appear to work, and I don't know why */
+    background-color: rgb(23,29,27);
+}
+meta.gutter.selected {
+    color: #93a586;
+}
+
+/* Buttons and stuff */
+
+meta.document.button {
+    background: linear-gradient(#43554E,#222C28);
+    border-color: #0C2219;
+}
+meta.document.button.highlighted {
+    background: linear-gradient(#222C28,#43554E);
+    color: white;
+}
+meta.document.button.disabled {
+    color: rgb(85, 89, 86);
+    background: #171e1b;
+}
+meta.button {
+    color: rgb(145,153,148);
+    background: linear-gradient(#2f413a,#152720);
+    border-color: #25321B;
+}
+meta.button.highlighted {
+    color: white;
+    background: linear-gradient(#152720,#43554E);
+}
+meta.button.selected {
+    color: #d4dcd9;
+}
+meta.button.disabled {
+    background: linear-gradient(#1b2622,#060c0a);
+    border-color: #1c2614;
+    color: rgb(85, 89, 86);
+}
+
+/* Textareas */
+
+meta.document.textfield {
+    background-color: rgb(23,29,27);
+}
+
+/*
+
+Document-level
+
+*/
+
+/* Document-level meta */
+
+meta.document {
+    /* root color */
+    background-color: #222C28;
+}
+/* Controls the highlight colour of the current line */
+meta.cursor {
+    background-color: rgba(12,13,12,0.26);
+}
+
+/* Generic Text */
+meta.text {
+    color: white;
+}
+
+meta.text.selected {
+    /* color: #91999466; */
+    color: rgb(145,153,148);
+    background-color: #666C68;
+}
+meta.text.invisible {
+    color: rgba(102,108,104,0.75);
+    /* color: #666C6880; */
+}
+
+/*
+
+Basic syntax elements
+
+*/
+
+string {
+    /* Prevent markup links from being styled here */
+    background-color: rgba(26,7,0,0.68);
+    color: #C23800;
+}
+
+string-template {
+    background-color: rgba(26,7,0,0.68);
+    color: #E94700;
+}
+
+/* language Keywords */
+keyword {
+    color: #A39E64;
+}
+/* Preprocessing commands */
+processing {
+    color: #A8B3AB;
+    background-color: #161D1A;
+}
+operator,
+bracket,
+colon {
+    color: rgba(188, 194, 190, 1);
+    font-weight: bold;
+}
+invalid {
+    color: #ffffff;
+    /* background-color: #990000AD; */
+    background-color: rgba(153,0,0,0.69);
+}
+comment {
+    /* Uses an alpha value so that selections show up overtop of it*/
+    background-color: rgba(21,28,25,0.50);
+    color: #666C68;
+}
+
+/* Doctypes and CDATA blocks */
+declaration, cdata {
+    color: #888888;
+}
+
+regex {
+    /* regular expressions */
+    color: #697340;
+}
+regex.escaped {
+    /* escape sequences in regular expressions */
+    color: #B3BD88;
+}
+
+/* Language denfinitions */
+
+/* 
+
+Language identifiers 
+
+*/
+
+identifier.type {
+    /* most identifiers will get this orange colour */
+    color: #C23B00;
+}
+
+identifier.constant, 
+value.number,
+value.entity,
+value.null,
+value.boolean {
+    color: #E98800;
+}
+
+identifier.global {
+    /* globals should be bolded */
+    font-weight: bold;
+}
+
+identifier.type.class {
+    /* class identifiers use the same color as the definition? */
+    color: #588E60;
+}
+
+identifier.variable,
+identifier.property,
+identifier.argument {
+    color: #648BD2;
+}
+identifier.key,
+identifier.decorator {
+    color: #B8CB97;
+    font-weight: bold;
+}
+identifier.function,
+identifier.method {
+    color: #A8B3AB;
+}
+identifier.symbol {
+    font-weight: bold;
+}
+
+definition.function function.name,
+definition.method method.name {
+    color: #A8B3AB;
+}
+
+/* types of things */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name  {
+    /* color: #9A2F00; */
+    font-weight: bold;
+    color: #588E60;
+    background-color: rgba(22,29,26,0.51);
+}
+
+
+
+/* 
+
+Tags for HTML and XML and friends 
+
+*/
+tag {
+    color: #A65EFF;
+}
+tag.framework {
+    /* keyword color */
+    color: #A39E64;
+}
+tag.attribute.name {
+    color: #909993;
+}
+tag.attribute.value {
+    /* Use the generic string colouration */
+    background-color: rgba(26,7,0,0.40);
+    color: #C23800;
+}
+
+/* 
+
+CSS-specific styling rules 
+
+*/
+style.at {
+    /* @-style decorators
+    use the same styling as a keyword 
+    */
+    color: #A39E64;
+}
+style.selector.element {
+    color: #A65EFF;
+}
+style.selector.identifier.class {
+    color: #A8B3AB;
+}
+style.selector.pseudoclass {
+    color: #81A677;
+}
+style.selector.pseudoelement {
+    color: #AECAA7;
+}
+style.attribute.name {
+    color: #648BD2;
+}
+style.attribute.number,
+style.value.color.hex {
+    color: #E98800;
+}
+style.value.color.named {
+    color: white;
+    font-weight: bold;
+}
+
+/* 
+
+Markup tagging 
+
+*/
+
+markup.heading {
+    /* Same as punctuation */
+    color: rgba(188, 194, 190, 1);
+}
+markup.heading.name {
+    /* same colour as variables */
+    color: #648BD2;
+}
+markup.line {
+    /* same colour as variables */
+    background-color: #5879b7;
+}
+markup.bold {
+    font-weight: bold;
+}
+markup.italic {
+    font-style: italic;
+}
+markup.strikethrough {
+    /* If the font supports strikethrough */
+    text-decoration: line-through;
+    /* Otherwise, provide a background color so that it's obvious it's happening */
+    background-color: rgba(21,28,25,0.50);
+}
+markup.list.item {
+    background-color: rgba(21,28,25,0.50);
+    color: rgba(188, 194, 190, 1);
+    font-weight: bold;
+}
+markup.bracket,
+markup.code {
+    /* 
+    same background as comments,
+    brighter text
+    */
+    background-color: rgba(21,28,25,0.50);
+    color: #a3a8a4;
+}
+markup.link,
+markup.link-inline {
+    text-decoration: underline;
+    background-color: rgba(21,28,25,0.50);
+    color: #a3a8a4;
+}
