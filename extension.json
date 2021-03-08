@@ -5,5 +5,9 @@
     "description": "Monoindustrial theme, ported from TextMate",
     "version": "1.0.0",
     "categories": ["themes"],
-    "bugs": "https://github.com/aurynn/monoindustrial.novaextension/issues"
+    "bugs": {
+        "url": "https://github.com/aurynn/monoindustrial.novaextension/issues"
+    },
+    "repository": "https://github.com/aurynn/monoindustrial.novaextension",
+    "homepage": "https://github.com/aurynn/monoindustrial.novaextension/",
 }
