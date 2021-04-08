@@ -115,7 +115,7 @@ string {
 }
 
 string-template {
-    background-color: rgba(26,7,0,0.68);
+    background-color: rgba(54, 15, 0, 0.68);
     color: #E94700;
 }
 
@@ -172,6 +172,11 @@ identifier.type {
     color: #C23B00;
 }
 
+identifier.type.name {
+    color: #588E60;
+    background-color: rgba(22,29,26,0.51);
+}
+
 identifier.constant, 
 value.number,
 value.entity,
@@ -204,7 +209,14 @@ identifier.function,
 identifier.method {
     color: #A8B3AB;
 }
+
+identifier.function.built-in {
+    color: #588E60;
+}
+
+symbol,
 identifier.symbol {
+    color: #a1ad6a;
     font-weight: bold;
 }
 
@@ -213,13 +225,15 @@ definition.method method.name {
     color: #A8B3AB;
 }
 
-/* types of things */
+
+
+/* names of things */
 definition.class class.name,
 definition.type type.name,
 definition.package package.name,
 definition.enum enum.name,
 definition.union union.name,
-definition.struct struct.name  {
+definition.struct struct.name {
     /* color: #9A2F00; */
     font-weight: bold;
     color: #588E60;
