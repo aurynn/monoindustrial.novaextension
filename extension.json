@@ -3,11 +3,11 @@
     "name": "Monoindustrial",
     "organization": "Aurynn Shaw",
     "description": "Monoindustrial theme, ported from TextMate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "categories": ["themes"],
     "bugs": {
         "url": "https://github.com/aurynn/monoindustrial.novaextension/issues"
     },
     "repository": "https://github.com/aurynn/monoindustrial.novaextension",
-    "homepage": "https://github.com/aurynn/monoindustrial.novaextension/",
+    "homepage": "https://github.com/aurynn/monoindustrial.novaextension/"
 }
