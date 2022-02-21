@@ -1,4 +1,4 @@
-/* 
+/*
 
 Window/full editor theming
 
@@ -119,6 +119,10 @@ string-template {
     color: #E94700;
 }
 
+string.escape {
+    color: #ff8000;
+}
+
 /* language Keywords */
 keyword {
     color: #A39E64;
@@ -161,9 +165,9 @@ regex.escaped {
 
 /* Language denfinitions */
 
-/* 
+/*
 
-Language identifiers 
+Language identifiers
 
 */
 
@@ -177,7 +181,7 @@ identifier.type.name {
     background-color: rgba(22,29,26,0.51);
 }
 
-identifier.constant, 
+identifier.constant,
 value.number,
 value.entity,
 value.null,
@@ -242,9 +246,9 @@ definition.struct struct.name {
 
 
 
-/* 
+/*
 
-Tags for HTML and XML and friends 
+Tags for HTML and XML and friends
 
 */
 tag {
@@ -263,14 +267,14 @@ tag.attribute.value {
     color: #C23800;
 }
 
-/* 
+/*
 
-CSS-specific styling rules 
+CSS-specific styling rules
 
 */
 style.at {
     /* @-style decorators
-    use the same styling as a keyword 
+    use the same styling as a keyword
     */
     color: #A39E64;
 }
@@ -298,9 +302,9 @@ style.value.color.named {
     font-weight: bold;
 }
 
-/* 
+/*
 
-Markup tagging 
+Markup tagging
 
 */
 
@@ -335,7 +339,7 @@ markup.list.item {
 }
 markup.bracket,
 markup.code {
-    /* 
+    /*
     same background as comments,
     brighter text
     */

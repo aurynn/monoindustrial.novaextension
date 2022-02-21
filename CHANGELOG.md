@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Add `string.escape`, to render escaped items in strings
+
 ## 1.0.1
 
 - Make string-template background more - apparent
